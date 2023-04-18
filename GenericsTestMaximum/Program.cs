@@ -11,6 +11,7 @@ namespace GenericsTestMaximum
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generics Test Maximum");
+            MaxInteger.GivenInteger(20, 30, 40);
             Console.ReadLine();
         }
     }

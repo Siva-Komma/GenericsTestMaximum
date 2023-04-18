@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace GenericsTestMaximum
 {
-    class MaxInteger
+    internal class MaxFloatValue
     {
-        public static int GivenInteger(int Firstvalue, int Secondvalue, int Thirdvalue)
+        public static float GivenFloat(float Firstvalue, float Secondvalue, float Thirdvalue)
         {
-            if(Firstvalue.CompareTo(Secondvalue)>0 && Firstvalue.CompareTo(Thirdvalue)>0 ||
-               Firstvalue.CompareTo(Secondvalue)>=0 && Firstvalue.CompareTo(Thirdvalue)>0 ||
-               Firstvalue.CompareTo(Secondvalue)> 0 && Firstvalue.CompareTo(Thirdvalue)>=0)
+            if (Firstvalue.CompareTo(Secondvalue) > 0 && Firstvalue.CompareTo(Thirdvalue) > 0 ||
+               Firstvalue.CompareTo(Secondvalue) >= 0 && Firstvalue.CompareTo(Thirdvalue) > 0 ||
+               Firstvalue.CompareTo(Secondvalue) > 0 && Firstvalue.CompareTo(Thirdvalue) >= 0)
             {
                 Console.WriteLine($"First number {Firstvalue} is greater than Second Number {Secondvalue} and ThirdNumber {Thirdvalue}");
                 return Firstvalue;
@@ -35,3 +35,4 @@ namespace GenericsTestMaximum
         }
     }
 }
+

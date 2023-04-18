@@ -11,15 +11,16 @@ namespace GenericsTestMaximum
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generics Test Maximum");
-            //MaxInteger.GivenInteger(20, 30, 40);
-            //MaxFloatValue.GivenFloat(10.2f, 20.2f, 1.2f);
-            //MaxStringvalues.GivenString("Hello", "Hi", "Hru");
+            MaxInteger.GivenInteger(20, 30, 40);
+            MaxFloatValue.GivenFloat(10.2f, 20.2f, 1.2f);
+            MaxStringvalues.GivenString("Hello", "Hi", "Hru");
             Refactor1<int>.UsingDifferentDatatypesFindMaxValue(10, 20, 30);
             Refactor1<float>.UsingDifferentDatatypesFindMaxValue(10.5f, 10.55f, 10.555f);
-            Refactor1<string>.UsingDifferentDatatypesFindMaxValue("Welcome","Hru","Fine");
-            //Refactor2<int>.UsingDifferentDatatypesFindMaxValues(70, 22, 10);
-            //Refactor2<float>.UsingDifferentDatatypesFindMaxValues(10.5f, 10.55f, 10.555f);
-            //Refactor2<string>.UsingDifferentDatatypesFindMaxValues("Welcome", "Hru", "Fine");
+            Refactor1<string>.UsingDifferentDatatypesFindMaxValue("Welcome", "Hru", "Fine");
+            Refactor2<int>.UsingDifferentDatatypesFindMaxValues(70, 22, 10);
+            Refactor2<float>.UsingDifferentDatatypesFindMaxValues(10.5f, 10.55f, 10.555f);
+            Refactor2<string>.UsingDifferentDatatypesFindMaxValues("Welcome", "Hru", "Fine");
+            ExpandMaxMethod.GivenIntegerforExpandMaxMethod(10, 20, 30, 40);
             Console.ReadLine();
         }
     }

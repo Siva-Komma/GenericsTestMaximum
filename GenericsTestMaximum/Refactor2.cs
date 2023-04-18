@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace GenericsTestMaximum
 {
-    internal class Refactor1 <T> where T : IComparable
-    { 
-        public T Firstvalue, secondvalue,Thirdvalue;
-        public static T UsingDifferentDatatypesFindMaxValue(T Firstvalue, T Secondvalue, T Thirdvalue)
+    internal class Refactor2<T> where T : IComparable<T>
+    {
+        public T Firsvalue, SecondValue, ThirdValue;
+        public Refactor2(T Firsvalue, T SecondValue, T ThirdValue)
+        {
+            this.Firsvalue = Firsvalue;
+            this.SecondValue = SecondValue;
+            this.ThirdValue = ThirdValue;
+        }
+        public static T UsingDifferentDatatypesFindMaxValues(T Firstvalue, T Secondvalue, T Thirdvalue)
         {
             if (Firstvalue.CompareTo(Secondvalue) > 0 && Firstvalue.CompareTo(Thirdvalue) > 0 ||
                Firstvalue.CompareTo(Secondvalue) >= 0 && Firstvalue.CompareTo(Thirdvalue) > 0 ||
